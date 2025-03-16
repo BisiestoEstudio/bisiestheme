@@ -1,0 +1,80 @@
+/*
+Theme Name: bisiestheme
+Author: Bisiesto Estudio
+Author URI: https://bisiesto.es
+Theme URI: 
+Tags: full-site-editing, block-patterns
+Text Domain: bisiestheme
+Requires at least: 6.4
+Requires PHP: 7.4
+Tested up to: 6.4
+Version: 100.0
+
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+
+/* Light mode */
+::backdrop,
+:root {
+	--sans-font: -apple-system, BlinkMacSystemFont, "Avenir Next", Avenir, "Nimbus Sans L", Roboto, "Noto Sans", "Segoe UI", Arial, Helvetica, "Helvetica Neue", sans-serif;
+	--mono-font: Consolas, Menlo, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+	--standard-border-radius: 5px;
+	--bg: #fff;
+	--accent-bg: #f5f7ff;
+	--text: #212121;
+	--text-light: #585858;
+	--border: #898EA4;
+	--accent: #0d47a1;
+	--code: #d81b60;
+	--preformatted: #444;
+	--marked: #ffdd33;
+	--disabled: #efefef;
+}
+
+/* End light mode */
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+
+	::backdrop,
+	:root {
+		color-scheme: dark;
+		--bg: #fff;
+		--accent-bg: #f5f7ff;
+		--text: #212121;
+		--text-light: #585858;
+		--border: #898EA4;
+		--accent: #0d47a1;
+		--code: #d81b60;
+		--preformatted: #444;
+		--marked: #ffdd33;
+		--disabled: #efefef;
+	}
+}
+
+/* End dark mode */
+
+
+/* Styles intended only for the front.*/
+html {
+	scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+
+	html {
+		scroll-behavior: auto;
+	}
+}
+
+body {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
+img,
+video {
+	opacity: 1;
+}
